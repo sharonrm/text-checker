@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 
+font-family: 'Grandstander', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Taviraj', serif; 
+*/
+
+@font-face {
+    font-family: 'Faune';
+    font-weight: 400;
+    src: url(/assets/faune-regular.woff), url(/assets/faune-regular.woff2);
+}
+
+@font-face {
+    font-family: 'Faune';
+    font-weight: 400;
+    font-style: italic;
+    src: url(/assets/faune-italic.woff), url(/assests/faune-italic.woff2);
+}
+
+@font-face {
+    font-family: 'Faune';
+    font-weight: 700;
+    src: url(/assets/faune-bold.woff), url(/assets/faune-bold.woff2);
+}
+
+body {
+    font-family: 'Faune', 'Ariel';
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: #2a2a2a;
+    color: #fff;
+    margin: 40px 40px 40px 320px;
+}
+
+
+section.options {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 280px;
+    background-color: #2a2a2a;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding: 40px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+div.option {
+    margin: 20px 0 0 0;
+}
+
+div.option-checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+label span {
+    font-style: italic;
+    float: right;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+input[type='text'] {
+    width: 100%;
+    background-color: #575757;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5px 7px 5px 7px;
+}
+
+select {
+    width: 100%;
+}
+
+textarea.output {
+    font-family: 'Faune',
+    'Ariel';
+    font-size: 64px;
+    width: 100%;
+    background: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    min-height: 100vh;
+    margin: 50px;
+    padding: 40px;
+}
+
+div.colors {
+    display: flex;
+    width: 100%;
+}
+
+div.colors div {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    text-align: center;
+    margin: 5px 10px 0 0;
+}
+
