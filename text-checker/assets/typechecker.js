@@ -83,11 +83,18 @@ fontweightTag.addEventListener('input', () => {
 })
 
 //go through each colorTag when you click on a div, the background and font color will change to the same style 
-//as the div.
+//as the div. And make the tag be selected
 colorTags.forEach(tag => {
     tag.addEventListener("click", () => {
         outputTag.style.backgroundColor = tag.style.backgroundColor
         outputTag.style.color = tag.style.color
+
+        //reset the classes
+        colorTags.forEach(tag => {
+            tag.classList.remove("selected")
+        })
+
+        tag.classList.add("selected")
     })
 })
 

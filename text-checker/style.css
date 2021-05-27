@@ -32,7 +32,7 @@ body {
 
     background-color: #2a2a2a;
     color: #fff;
-    margin: 40px 40px 40px 320px;
+    margin: 0 0 0 280px;
 }
 
 
@@ -116,5 +116,24 @@ div.colors div {
     border-radius: 50%;
     text-align: center;
     margin: 5px 10px 0 0;
+    transition: border .4s;
+}
+
+div.colors div.selected {
+    border: 2px solid #fff;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: #656565;
+    border-radius: 50%;
+    transition: background-color .5s;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #fff;
 }
 
